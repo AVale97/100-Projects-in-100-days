@@ -27,6 +27,9 @@ def higherlower():
     celeb_b_followers = celeb_b["follower_count"]
 
     userchoice = input ("Who has more followers? type a or b").lower()
+    if userchoice not in ['a', 'b']:
+            print("Invalid input. Please type 'a' or 'b'.")
+            continue
 
     #Clear screen
     print("\n" * 20)
